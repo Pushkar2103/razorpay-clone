@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card1:hover {
+    svg {
+        filter: drop-shadow(0px 2px 22px rgba(202, 202, 202, 0.25));
+        stroke: none;
+    }
+
+    img {
+        background-image: linear-gradient(#ffffff1f, #ffffff53);
+    }
+
+    background-image: url(images/features-wave.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 1rem right 0;
+}
+
+.card2:hover {
+    svg {
+        filter: drop-shadow(0px 2px 22px rgba(0, 0, 0, 0.415));
+        stroke: none;
+    }
+
+    img {
+        background-image: linear-gradient(rgb(43, 123, 234), rgb(2, 87, 206));
+    }
+
+    div {
+        background-image: url(images/features2-wave.svg);
+        background-repeat: no-repeat;
+        background-position: bottom 1rem right 0;
+    }
+}
+
+.card1, .card2 {
+    div {
+        gap: 0.8rem;
+    }
+}
+
+.imageMove {
+    animation: up 10s linear infinite;
+}
+
+@keyframes up {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: -50%;
+    }
+}
